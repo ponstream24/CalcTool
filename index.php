@@ -19,7 +19,7 @@
         <div class="logo">
             <img src="./img/logo.jpg" alt="" width="110px">
         </div>
-        <div class="title">Calc</div>
+        <div class="title">Calc Tool</div>
     </header>
     <main>
         <nav>
