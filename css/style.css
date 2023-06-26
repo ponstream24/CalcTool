@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+html {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+:root {
+  --brand: #0A2647;
+  --dark: #112D4E;
+  --dark-sub: #3F72AF;
+  --light-sub: #DBE2EF;
+  --light: #F9F7F7;
+  --bg: #fff;
+  --font-color: var(--brand);
+  --green: #7fff7f;
+  --yellow: #ffbf7f;
+  --red: #ff7f7f;
+  --blue: #7fbfff;
+}
+
+html {
+  color: var(--font-color);
+  background: var(--bg);
+  border-color: var(--light-sub) !important;
+  overscroll-behavior-y: none;
+}
+
+body {
+  margin: 0;
+  padding: 8px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  border-bottom: solid;
+  margin-bottom: 30px;
+}
+header .title {
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+main nav {
+  margin: 10px;
+}
+main nav .box .box_title {
+  text-wrap: nowrap;
+  font-size: 20px;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+main nav .box .content_title {
+  padding-bottom: 10px;
+}
+main .core {
+  width: 100%;
+  margin: 10px;
+}
+main .core .box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  border: var(--brand) solid;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 15px 0px grey;
+  transition: ease 0.3s;
+  opacity: 1;
+}
+main .core .box.hide {
+  display: none;
+  opacity: 0;
+}
+main .core .box .content_title {
+  text-wrap: nowrap;
+  font-size: 20px;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+main .core .box .content_box {
+  width: 100%;
+}
+main .core .box .content_box .content {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .core .box .content_box .content.arow button {
+  font-weight: 600;
+  font-size: large;
+  text-align: center;
+}
+main .core .box .content_box .content.value {
+  width: 100%;
+}
+main .core .box .content_box .content.value input {
+  width: 100%;
+}
+main .core .box .content_box .content.value textarea {
+  width: 100%;
+  resize: none;
+}
+main .core .box .content_box table {
+  border-collapse: collapse;
+}
+main .core .box .content_box table td,
+main .core .box .content_box table th {
+  border: solid;
+  padding: 5px;
+  text-align: center;
+}
+main .core .box .content_box table span.smail {
+  font-size: x-small;
+}
+main .core .box .content_box table span.up {
+  vertical-align: top;
+}
+main .core .box .content_box table span.bottom {
+  vertical-align: bottom;
+}
