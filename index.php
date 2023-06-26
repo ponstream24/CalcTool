@@ -247,14 +247,6 @@
                 <div class="content_box">
                 </div>
             </div>
-
-            <div class="box hide" id="type8">
-                <div class="content_title">
-                    8
-                </div>
-                <div class="content_box">
-                </div>
-            </div>
         </div>
     </main>
     <footer>
