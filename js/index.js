@@ -259,27 +259,30 @@ function type4Run() {
 
 function type5Run() {
 
-    var b_key = parseInt(type5.before_value.value);
+    var n = parseInt(type5.before_value.value);
 
     type5.after_value.value = "";
 
-    for (var i = 2; i < i + 1; i++) {
+    if (n === 1) {
 
-        if (b_key % i == 0) {
-            for (var n = 1; n < n + 1; n++) {
-                if (b_key % i == 0) {
-
-                    type5.after_value.value = +`${i},\n`;
-
-                    var b_key = b_key / i;
-                } else {
-                    break;
-                }
-            }
-        }
-
-        if (b_key == 1) {
-            break;
-        }
+        type5.after_value.value = "1";
+        return;
     }
+
+    var init = 2;
+
+    while (n !== 1) {
+        var i = init;
+        while (i < Number.MAX_SAFE_INTEGER) {
+            if (n % i == 0) {
+                type5.after_value.value += `${i}, `
+                n /= i;
+                break;
+            }
+            i++;
+        }
+        init = i;
+    }
+
+    return true;
 }
