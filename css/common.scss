@@ -1,0 +1,512 @@
+.pon-h1 {
+    padding: 0.25em 0.5em;
+    /*上下 左右の余白*/
+    color: #494949;
+    /*文字色*/
+    background: transparent;
+    /*背景透明に*/
+    border-left: solid 5px #40394A;
+    /*左線*/
+}
+
+:root {
+    color: #1C1427;
+}
+
+body {
+    background: #CCFFBD;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.home-section .home-content .bx-menu,
+.home-section .home-content span.text {
+    color: #fff;
+    margin-top: 0px;
+}
+
+.discord_color {
+    background: rgb(88, 101, 242);
+    border-color: rgb(71, 82, 196);
+}
+
+.discord_color:hover {
+    background: rgb(71, 82, 196);
+    border-color: rgb(71, 82, 196);
+}
+
+.twitter_color {
+    background: rgb(29, 155, 240);
+    border-color: rgb(29, 155, 240);
+}
+
+.twitter_color:hover {
+    background: rgb(29, 155, 240);
+    border-color: rgb(29, 155, 240);
+}
+
+.google_color {
+    background: #fff;
+    border-color: #000;
+    color: #000;
+}
+
+.google_color:hover {
+    background: #c5c7cc;
+    border-color: #000;
+    color: #000;
+}
+
+.line_color {
+    background: #06c755;
+    border-color: #4cc764;
+}
+
+.line_color:hover {
+    background: #4cc764;
+    border-color: #4cc764;
+}
+
+.github_color {
+    background: #000;
+    border-color: #000;
+}
+
+.github_color:hover {
+    background: #000;
+    border-color: #000;
+}
+
+.facebook_color {
+    background: #1877f2;
+    border-color: #1877f2;
+}
+
+.facebook_color:hover {
+    background: #166fe5;
+    border-color: #166fe5;
+}
+
+.zoom_color {
+    background: #0e71eb;
+    border-color: #0e71eb;
+}
+
+.zoom_color:hover {
+    background: #2681f2;
+    border-color: #2681f2;
+}
+
+.amazon_color {
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+    border-color: rgb(132, 106, 41);
+    color: #000;
+}
+
+.amazon_color:hover {
+    background: #f0c14b;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #000;
+}
+
+.minecraft_color {
+    background: rgb(52, 170, 47);
+    border-color: rgb(52, 170, 47);
+}
+
+.minecraft_color:hover {
+    background: rgb(52, 170, 47);
+    border-color: rgb(52, 170, 47);
+}
+
+.sns_login {
+    display: flex;
+    width: 100%;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+a.sns_login,
+a.sns_login:hover,
+a.sns_login:focus {
+    color: #fff;
+}
+
+.sns_login i {
+    margin-right: 5px;
+}
+
+.back-link a {
+    margin-right: 10px;
+}
+
+.row {
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.error_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.error_box {
+    display: flex;
+    background: #ca3a3a;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.error_box p {
+    background: none;
+    color: #fff;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.flex-start {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+}
+
+main {
+    margin-bottom: 30px;
+}
+
+main.login {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+main.login .row {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+
+/* header */
+
+header {
+    display: flex;
+    /* background: #fff; */
+    background: #11101d;
+    height: 60px;
+    width: 100%;
+    color: #fff;
+    align-items: center;
+}
+
+header .logo {
+    margin-left: 15px;
+    display: inline-flex;
+    /* width: 150px; */
+}
+
+header .logo img {
+    height: 55px;
+    padding: 5px;
+}
+
+header p {
+    margin: 0px;
+}
+
+
+/* footer */
+
+footer {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #7ECA9C;
+    /* background: #40394A; */
+    flex-direction: column;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    position: absolute;
+    /*←絶対位置*/
+    bottom: 0;
+    /*下に固定*/
+}
+
+.wrapper {
+    min-height: 100vh;
+    position: relative;
+    /*←相対位置*/
+    padding-bottom: 340px;
+    /*←footerの高さ*/
+    box-sizing: border-box;
+    /*←全て含めてmin-height:100vhに*/
+}
+
+footer a,
+footer a:visited {
+    color: #fff;
+}
+
+footer .bar {
+    width: 80%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #fff;
+}
+
+footer .content_box {
+    margin: 20px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+footer .content_box .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+footer .content_box .links .link {
+    border-radius: 15px;
+    padding-left: 10px;
+    width: calc(100% / 7);
+    text-align: center;
+}
+
+footer .content_box p a.link {
+    margin-right: 20px;
+}
+
+footer .content_box p {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.code_error:focus,
+.code_error:focus-visible,
+.code_error::-webkit-inner-spin-button,
+.code_error::-webkit-outer-spin-button,
+.code_error {
+    border-color: #ff0000;
+    border-radius: 5px;
+    outline-color: #ff0000;
+}
+
+.code:hover,
+.code::-webkit-inner-spin-button,
+.code::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield;
+}
+
+@media (min-width: 576px) {
+    main.login .col-xs-offset-1 {
+        margin-left: 0;
+    }
+}
+
+.bg-fff {
+    background: #fff;
+}
+
+.dis_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row_head {
+    background: #fff;
+    border-bottom: 1px solid #e9ecf2;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    height: 60px;
+    line-height: 60px;
+}
+
+.row_box {
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+    max-width: calc(100% - 240px);
+    min-width: 500px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.dis-inline {
+    display: inline;
+    width: 100%;
+}
+
+.table.dataTable tr th,
+.table.dataTable tr td {
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.row_head p {
+    margin: 0px;
+}
+
+.login-form {
+    width: 100%;
+    margin: 10px;
+}
+
+.login-form fieldset {
+    border: 0;
+}
+
+a,
+a:hover,
+a:focus {
+    color: #125C13;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.login-form .form-control {
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #ddd;
+    box-shadow: none;
+    height: 46px;
+    border-color: #7ECA9C;
+    color: #1C1427;
+    padding-left: 5px;
+}
+
+.login-form fieldset input[type="submit"] {
+    border-radius: 5px;
+    background-color: #7ECA9C;
+    border-color: #7ECA9C;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+
+/* breadcrumb */
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 750px;
+    margin-left: 1em;
+}
+
+.breadcrumb_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* title */
+
+.title_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1em;
+}
+
+.title {
+    width: 550px;
+}
+
+.title p {
+    font-size: 2em;
+    margin: 10px;
+}
+
+.content_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: #ffffff;
+    height: 150px;
+    width: 300px;
+    margin: 30px;
+    padding: 10px;
+    box-shadow: 2px 2px 4px grey;
+}
+
+.content_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inline {
+    display: inline;
+    width: 100%;
+}
+
+.content_box .content_name {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.content_box .content_value {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 959px) {
+    /* 959px以下に適用されるCSS（タブレット用） */
+}
+
+@media screen and (max-width: 480px) {
+    /* 480px以下に適用されるCSS（スマホ用） */
+}

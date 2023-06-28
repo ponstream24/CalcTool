@@ -17,111 +17,50 @@ html {
   --blue: #7fbfff;
 }
 
-html {
-  color: var(--font-color);
-  background: var(--bg);
-  border-color: var(--light-sub) !important;
-  overscroll-behavior-y: none;
-}
-
-body {
-  margin: 0;
-  padding: 8px;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  border-bottom: solid;
-  margin-bottom: 30px;
-}
-header .title {
-  font-size: xx-large;
-  font-weight: 600;
-}
-
-main {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-}
-main nav {
-  margin: 10px;
-}
-main nav .box .box_title {
-  text-wrap: nowrap;
-  font-size: 20px;
-  font-size: 20px;
-  padding-bottom: 10px;
-}
-main nav .box .content_title {
-  padding-bottom: 10px;
-}
-main .core {
-  width: 100%;
-  margin: 10px;
-}
-main .core .box {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  border: var(--brand) solid;
-  padding: 10px;
-  border-radius: 20px;
-  box-shadow: 4px 4px 15px 0px grey;
+main .row {
   transition: ease 0.3s;
   opacity: 1;
 }
-main .core .box.hide {
+main .row.hide {
   display: none;
   opacity: 0;
 }
-main .core .box .content_title {
-  text-wrap: nowrap;
-  font-size: 20px;
-  font-size: 20px;
-  padding-bottom: 10px;
-}
-main .core .box .content_box {
-  width: 100%;
-}
-main .core .box .content_box .content {
+main .row .content {
   margin: 10px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .core .box .content_box .content.arow button {
+main .row .content.arow button {
   font-weight: 600;
   font-size: large;
   text-align: center;
 }
-main .core .box .content_box .content.value {
+main .row .content.value {
   width: 100%;
 }
-main .core .box .content_box .content.value input {
+main .row .content.value input {
   width: 100%;
 }
-main .core .box .content_box .content.value textarea {
+main .row .content.value textarea {
   width: 100%;
   resize: none;
 }
-main .core .box .content_box table {
+main .row table {
   border-collapse: collapse;
 }
-main .core .box .content_box table td,
-main .core .box .content_box table th {
+main .row table td,
+main .row table th {
   border: solid;
   padding: 5px;
   text-align: center;
 }
-main .core .box .content_box table span.smail {
-  font-size: x-small;
+main .row table span.smail {
+  font-size: x-small !important;
 }
-main .core .box .content_box table span.up {
-  vertical-align: top;
+main .row table span.up {
+  vertical-align: top !important;
 }
-main .core .box .content_box table span.bottom {
-  vertical-align: bottom;
+main .row table span.bottom {
+  vertical-align: bottom !important;
 }
