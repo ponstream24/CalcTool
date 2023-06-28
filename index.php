@@ -43,10 +43,13 @@
                     <button onclick="change('type5')">素因数分解</button>
                 </div>
                 <div class="content_title">
-                    <button onclick="change('type6')">暗号化/復号化</button>
+                    <button onclick="change('type6')">暗号化</button>
                 </div>
                 <div class="content_title">
-                    <button onclick="change('type7')">電子署名</button>
+                    <button onclick="change('type7')">復号化</button>
+                </div>
+                <div class="content_title">
+                    <button onclick="change('type8')">電子署名</button>
                 </div>
             </div>
         </nav>
@@ -201,48 +204,57 @@
                     </div>
                 </div>
             </div>
-            <div class="box hide" id="type5">
+            <div class="box hide" id="type6">
                 <div class="content_title">
-                    暗号化/復号化
+                    暗号化
                 </div>
                 <div class="content_box">
                     <div class="content value">
                         <div class="sub">暗号前</div>
-                        <input type="text" name="type-1-before_value" id="type-1-before_value" placeholder="110" incremental>
+                        <p>文字から数字に変換してください。([,]で区切って)</p>
+                        <input type="text" name="type-6-before_value" id="type-6-before_value" placeholder="3,14,6" incremental>
                     </div>
                     <div class="content">
-                        <div class="sub">進数</div>
-                        <input type="number" name="type-1-number" id="type-1-number" placeholder="10" step="1" incremental>
+                        <div class="sub">進数(全文字数)</div>
+                        <input type="number" name="type-6-number" id="type-6-number" placeholder="26" step="1" incremental>
                     </div>
                     <div class="content">
                         <div class="sub">n</div>
-                        <input type="number" name="type-1-number" id="type-1-number" placeholder="10" step="1" incremental>
+                        <input type="number" name="type-6-n" id="type-6-n" placeholder="89711" step="1" incremental>
                     </div>
                     <div class="content">
                         <div class="sub">e</div>
-                        <input type="number" name="type-1-number" id="type-1-number" placeholder="10" step="1" incremental>
+                        <input type="number" name="type-6-e" id="type-6-e" placeholder="3251" step="1" incremental>
                     </div>
                     <div class="content arow">
-                        <button onclick="type5Run()">↓</button>
+                        <button onclick="type6Run()">↓</button>
                     </div>
                     <div class="content value">
                         <div class="sub">変換後の値</div>
-                        <input type="text" name="type-1-after_value" id="type-1-after_value" readonly placeholder="6" incremental>
+                        <input type="text" name="type-6-after_value" id="type-6-after_value" readonly placeholder="1382" incremental>
                     </div>
-                </div>
-            </div>
-
-            <div class="box hide" id="type6">
-                <div class="content_title">
-                    6
-                </div>
-                <div class="content_box">
                 </div>
             </div>
 
             <div class="box hide" id="type7">
                 <div class="content_title">
-                    7
+                    復号化
+                </div>
+                <div class="content_box">
+                </div>
+            </div>
+
+            <div class="box hide" id="type8">
+                <div class="content_title">
+                    8
+                </div>
+                <div class="content_box">
+                </div>
+            </div>
+
+            <div class="box hide" id="type9">
+                <div class="content_title">
+                    9
                 </div>
                 <div class="content_box">
                 </div>

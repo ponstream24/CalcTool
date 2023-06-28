@@ -3,6 +3,7 @@ var type2 = {};
 var type3 = {};
 var type4 = {};
 var type5 = {};
+var type6 = {};
 var now = "type1";
 
 type1.before_key = document.querySelector("#type-1-before_key");
@@ -24,6 +25,12 @@ type4.after_value = document.querySelector("#type-4-after_value");
 
 type5.before_value = document.querySelector("#type-5-before_value");
 type5.after_value = document.querySelector("#type-5-after_value");
+
+type6.before_value = document.querySelector("#type-6-before_value");
+type6.number = document.querySelector("#type-6-number");
+type6.n = document.querySelector("#type-6-n");
+type6.e = document.querySelector("#type-6-e");
+type6.after_value = document.querySelector("#type-6-after_value");
 
 Object.values(type1).forEach(element => {
     element.addEventListener('input', e => {
@@ -285,4 +292,31 @@ function type5Run() {
     }
 
     return true;
+}
+
+function type6Run() {
+
+    var before_value = type6.before_value.value;
+    var number = parseInt(type6.number.value);
+    var n = BigInt(type6.n.value);
+    var e = BigInt(type6.e.value);
+
+    // N進数から10へ
+    var b_array = before_value.split(",");
+
+    var b_value = BigInt(0);
+
+    for (let i = 1; i <= b_array.length; i++) {
+
+        const element = b_array[i - 1];
+        b_value += pow(number, BigInt(b_array.length - i)) * BigInt(element);
+    }
+
+    // 数値化
+    var c = pow(b_value, e) % n;
+
+    // 暗号文
+    var a_string = c.toString(number);
+
+    type6.after_value.value = a_string;
 }
