@@ -12,6 +12,7 @@ require("src/sidebar.php");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://itsystem-lab.com/i-lab_contents/icon_bg_white.png" type="image/x-icon">
     <title>電卓</title>
     <script src="https://cdn.datatables.net/t/bs-3.3.6/jqc-1.12.0,dt-1.10.11/datatables.min.js"></script>
 
