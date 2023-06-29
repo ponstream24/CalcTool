@@ -209,7 +209,6 @@ main.login .row {
 /* header */
 header {
   display: flex;
-  /* background: #fff; */
   background: #11101d;
   height: 60px;
   width: 100%;
@@ -220,7 +219,6 @@ header {
 header .logo {
   margin-left: 15px;
   display: inline-flex;
-  /* width: 150px; */
 }
 
 header .logo img {
@@ -239,26 +237,20 @@ footer {
   align-items: center;
   justify-content: center;
   background: #7ECA9C;
-  /* background: #40394A; */
   flex-direction: column;
   width: 100%;
   color: #fff;
   text-align: center;
   padding: 30px 0;
   position: absolute;
-  /*←絶対位置*/
   bottom: 0;
-  /*下に固定*/
 }
 
 .wrapper {
   min-height: 100vh;
   position: relative;
-  /*←相対位置*/
   padding-bottom: 340px;
-  /*←footerの高さ*/
   box-sizing: border-box;
-  /*←全て含めてmin-height:100vhに*/
 }
 
 footer a,

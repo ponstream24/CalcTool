@@ -1,7 +1,7 @@
 <?php
 
     // 
-    function html_sidebar($member = "Guest"){
+    function html_sidebar(){
 
         //書き込む
         echo <<<HTML
