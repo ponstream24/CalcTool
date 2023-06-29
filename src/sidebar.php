@@ -28,7 +28,7 @@
                     </li>
                     <li>
                         <a onclick="change('type2')">
-                            <i class='bx bx-tachometer' ></i>
+                            <i class='bx bx-calculator' ></i>
                             <span class="link_name">通常電卓</span>
                         </a>
                         <ul class="sub-menu blank">
@@ -39,7 +39,7 @@
                     </li>
                     <li>
                         <a onclick="change('type3')">
-                            <i class='bx bx-tachometer' ></i>
+                            <i class='bx bx-grid-horizontal' style='color:#ffffff' ></i>
                             <span class="link_name">ユーグリッド</span>
                         </a>
                         <ul class="sub-menu blank">
@@ -50,7 +50,7 @@
                     </li>
                     <li>
                         <a onclick="change('type4')">
-                            <i class='bx bx-tachometer' ></i>
+                            <i class='bx bx-shape-square'></i>
                             <span class="link_name">一次不定方程式</span>
                         </a>
                         <ul class="sub-menu blank">
@@ -61,7 +61,7 @@
                     </li>
                     <li>
                         <a onclick="change('type5')">
-                            <i class='bx bx-tachometer' ></i>
+                            <i class='bx bx-cut'></i>
                             <span class="link_name">素因数分解</span>
                         </a>
                         <ul class="sub-menu blank">
@@ -72,7 +72,7 @@
                     </li>
                     <li>
                         <a onclick="change('type6')">
-                            <i class='bx bx-tachometer' ></i>
+                            <i class='bx bx-lock-alt'></i>
                             <span class="link_name">暗号化</span>
                         </a>
                         <ul class="sub-menu blank">
@@ -83,7 +83,7 @@
                     </li>
                     <li>
                         <a onclick="change('type7')">
-                            <i class='bx bx-tachometer' ></i>
+                            <i class='bx bx-lock-open-alt' ></i>
                             <span class="link_name">復号化</span>
                         </a>
                         <ul class="sub-menu blank">

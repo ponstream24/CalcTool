@@ -32,20 +32,6 @@ sidebarLogo.addEventListener("click", () => {
     sidebar.classList.toggle("close")
 })
 
-//プロフィール画像取得
-var profile_ico = document.querySelector(".profile-content")
-
-//プロフィール画像を見張る
-profile_ico.addEventListener("click", () => {
-
-    //もし、サイドバーにcloseが含まれていたら
-    if (sidebar.className.includes("close")) {
-
-        sidebar.classList.toggle("close")
-
-    }
-})
-
 //左上のタイトル
 var sidebarLogo = document.querySelector(".text")
 

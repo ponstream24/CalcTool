@@ -67,29 +67,28 @@ Object.values(type6).forEach(element => {
     })
 });
 
+Object.values(type7).forEach(element => {
+    element.addEventListener('input', e => {
+        type7Run();
+    })
+});
+
 function type1Run() {
 
     var b_key = parseInt(type1.before_key.value);
     var a_key = parseInt(type1.after_key.value);
 
+    if (isNaN(b_key) || isNaN(a_key)) return;
+
     // いったん10真数に
     var ten = parseInt(type1.before_value.value, b_key);
+
+    if (isNaN(b_key)) return;
 
     type1.after_value.value = ten.toString(a_key);
 }
 
 function replaceType2(expression, base = 10) {
-
-    // 進数変換
-    const numberRegex = new RegExp(`[0-9A-F]+(?=([^${base}]+|$))`, 'gi');
-    const numbers = expression.match(numberRegex);
-
-    if (numbers) {
-        numbers.forEach((number) => {
-            const decimal = parseInt(number, base);
-            expression = expression.replace(number, decimal);
-        });
-    }
 
     // 冪乗
     var powerRegex = /(\d+)\^(\d+)/g;
@@ -111,6 +110,9 @@ function replaceType2(expression, base = 10) {
     replacedExpression = replacedExpression.replaceAll("×", "*");
     replacedExpression = replacedExpression.replaceAll("÷", "/");
 
+    // 進数変換
+    replacedExpression = replacedExpression.replace(/\d+/g, (match) => parseInt(match, base) + "n")
+
     return replacedExpression;
 }
 
@@ -118,10 +120,16 @@ function type2Run() {
 
     var b_key = parseInt(type2.before_key.value);
 
+    if (isNaN(b_key)) return;
+
     var ten;
 
     try {
         ten = eval(replaceType2(type2.before_value.value, b_key));
+
+        if (isNaN(Number(ten)) || b_key == 0) {
+            ten = "無様な式です"
+        };
     } catch (e) {
         ten = "無様な式です"
     }
@@ -318,7 +326,7 @@ function type6Run() {
     var n = BigInt(type6.n.value);
     var e = BigInt(type6.e.value);
 
-    if (number == NaN || n == NaN || e == NaN) return;
+    if (isNaN(number) || isNaN(parseInt(n)) || isNaN(parseInt(e)) || e + n == BigInt(0)) return;
 
     // N進数から10へ
     var b_array = before_value.split(",");
@@ -459,6 +467,8 @@ function type7Run() {
     var n = BigInt(type7.n.value);
     var d = BigInt(type7.d.value);
     var number = parseInt(type7.number.value);
+
+    if (isNaN(number) || isNaN(parseInt(n)) || isNaN(parseInt(d)) || d + n == BigInt(0)) return;
 
     // N進数から10へ
     var b_array = before_value.split(",");
