@@ -21,6 +21,7 @@ main {
     .row {
         transition: ease 0.3s;
         opacity: 1;
+        padding-bottom: 30px;
         &.hide {
             display: none;
             opacity: 0;

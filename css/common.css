@@ -1,13 +1,9 @@
 @charset "UTF-8";
 .pon-h1 {
   padding: 0.25em 0.5em;
-  /*上下 左右の余白*/
   color: #494949;
-  /*文字色*/
   background: transparent;
-  /*背景透明に*/
   border-left: solid 5px #40394A;
-  /*左線*/
 }
 
 :root {
@@ -16,8 +12,6 @@
 
 body {
   background: #CCFFBD;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
 }
 
 .home-section .home-content .bx-menu,
@@ -349,7 +343,7 @@ footer .content_box p {
   border-radius: 5px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   max-width: calc(100% - 240px);
-  min-width: 500px;
+  min-width: 70%;
   padding-bottom: 15px;
   padding-left: 30px;
   padding-right: 30px;

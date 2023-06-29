@@ -20,6 +20,7 @@ html {
 main .row {
   transition: ease 0.3s;
   opacity: 1;
+  padding-bottom: 30px;
 }
 main .row.hide {
   display: none;

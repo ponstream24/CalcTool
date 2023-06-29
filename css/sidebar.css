@@ -309,4 +309,19 @@
     padding-right: 10%;
     padding-left: 10%;
   }
+  .home-section .content_section {
+    display: none;
+  }
+  .home-section .home-content span.text {
+    display: none;
+  }
+  .sidebar.close ~ .home-section .content_section {
+    display: unset;
+  }
+  .sidebar.close ~ .home-section .home-content {
+    display: flex;
+  }
+  .sidebar.close ~ .home-section .home-content span.text {
+    display: unset;
+  }
 }

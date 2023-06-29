@@ -307,4 +307,26 @@
         padding-right: 10%;
         padding-left: 10%;
     }
+    .home-section {
+        .content_section {
+            display: none;
+        }
+        .home-content {
+            // display: none;
+            span.text {
+                display: none;
+            }
+        }
+    }
+    .sidebar.close~.home-section {
+        .content_section {
+            display: unset;
+        }
+        .home-content {
+            display: flex;
+            span.text {
+                display: unset;
+            }
+        }
+    }
 }
